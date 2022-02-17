@@ -46,11 +46,11 @@ jobs:
         file: docker/Dockerfile
         load: true
         tags: rdubois/python-training:latest
-    - name: save image tag to file
+    - name: Save image tag to file
       shell: bash
       run: |
         echo rdubois/python-training:latest > image_tag
-    - name: upload API image tag to artifacts
+    - name: Upload image tag to artifacts
       uses: actions/upload-artifact@v2
       with:
         name: image_tag
