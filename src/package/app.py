@@ -5,7 +5,7 @@ from fastapi import FastAPI, Response, status
 
 app = FastAPI()
 
-fileConfig('src/analytic/logging.conf')
+fileConfig('src/package/logging.conf')
 logger = logging.getLogger()
 
 @app.get("/ready")
